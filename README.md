@@ -8,10 +8,6 @@
 
 - React
 
-## Live Demo
-
-[Live Demo Link](https://mnekx.github.io/crypto-tickers/)
-
 ## Getting Started
 
 ### Setup
