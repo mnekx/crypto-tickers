@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crypto-tickers/static/css/main.b3c49d09.css",
+    "main.js": "/crypto-tickers/static/js/main.4ee6bd62.js",
+    "index.html": "/crypto-tickers/index.html",
+    "main.b3c49d09.css.map": "/crypto-tickers/static/css/main.b3c49d09.css.map",
+    "main.4ee6bd62.js.map": "/crypto-tickers/static/js/main.4ee6bd62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3c49d09.css",
+    "static/js/main.4ee6bd62.js"
+  ]
+}
