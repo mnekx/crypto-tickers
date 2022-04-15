@@ -2,7 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Filter from './Filter';
 import Ticker from './Ticker';
-export const Tickers = () => {
+
+const Tickers = () => {
   const tickers = useSelector((state) => state.tickers);
 
   if (tickers.loading) {
@@ -22,9 +23,9 @@ export const Tickers = () => {
     );
   }
   const tickersUL = (
-    <ul className='items d-grid'>
+    <ul className="items d-grid">
       {tickers.list.map((ticker) => (
-        <Ticker ticker={ticker} />
+        <Ticker key={ticker.id} ticker={ticker} />
       ))}
     </ul>
   );
@@ -37,3 +38,5 @@ export const Tickers = () => {
     </section>
   );
 };
+
+export default Tickers;
