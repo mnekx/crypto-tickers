@@ -1,6 +1,6 @@
 # Crypto Tickers
 
-## Screenshot ![see](./screenshot.png?raw=true 'Title')
+## Screenshot ![screenshot](./screenshot.png)
 
 > The app retrieves available tickers from the API lists them in an home page. When a particular ticker is clicker it routes to the information of that ticker.
 
@@ -56,4 +56,4 @@ This project is [MIT](./MIT.md) licensed.
 
 ## Aknowledgements
 
-Thanks to Nelson Sakwa, author of the original design.
+Thanks to Nelson Sakwa, author of the original [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
