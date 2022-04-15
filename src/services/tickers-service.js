@@ -6,7 +6,7 @@ const get = (id) => http.get(`/tickers/${id}`);
 
 const TickersService = {
   getAll,
-  get
+  get,
 };
 
 export default TickersService;
