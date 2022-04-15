@@ -1,6 +1,6 @@
 # Book Store
 
-## Screenshot ![see](./src/assets/images/screenshot.png?raw=true 'Title')
+## Screenshot ![see](./screenshot.png?raw=true 'Title')
 
 > The app retrieves available tickers from the API lists them in an home page. When a particular ticker is clicker it routes to the information of that ticker.
 
