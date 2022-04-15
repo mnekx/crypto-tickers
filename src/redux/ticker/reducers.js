@@ -1,7 +1,12 @@
-import { TICKER_ERROR_FETCHING, TICKER_FETCHING_STARTED, TICKER_RETRIEVED } from "./actionTypes";
+import {
+  TICKER_ERROR_FETCHING,
+  TICKER_FETCHING_STARTED,
+  TICKER_RETRIEVED,
+} from './actionTypes';
+
 const defautState = { data: null, error: false, loading: false };
 
-export const selectedTicker = (prevState = defautState, action) => {
+const selectedTicker = (prevState = defautState, action) => {
   switch (action.type) {
     case TICKER_FETCHING_STARTED:
       return { ...prevState, loading: true };
@@ -13,4 +18,4 @@ export const selectedTicker = (prevState = defautState, action) => {
       return prevState;
   }
 };
-
+export default selectedTicker;
