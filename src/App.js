@@ -1,12 +1,13 @@
 import './App.css';
-import { Tickers } from './components/Tickers';
-import TickerDetail from './components/TickerDetail';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { Route, Routes, Outlet } from 'react-router-dom';
+import {
+  Route, Routes, Outlet, NavLink,
+} from 'react-router-dom';
 import { tickersRetrieved } from './redux/tickers/actions';
-import { NavLink } from 'react-router-dom';
-import '@fortawesome/fontawesome-free/js/all.js';
+import TickerDetail from './components/TickerDetail';
+import Tickers from './components/Tickers';
+import '@fortawesome/fontawesome-free/js/all';
 
 function App() {
   const dispatch = useDispatch();
@@ -15,11 +16,11 @@ function App() {
   }, [dispatch]);
   return (
     <div>
-      <nav className='d-flex'>
-        <NavLink to="/" ><i className="fa-solid fa-angle-left"></i></NavLink>
+      <nav className="d-flex">
+        <NavLink to="/"><i className="fa-solid fa-angle-left" /></NavLink>
         <div>
-          <i className="fa-solid fa-magnifying-glass"></i>
-          <i className="fa-solid fa-gear"></i>
+          <i className="fa-solid fa-magnifying-glass" />
+          <i className="fa-solid fa-gear" />
         </div>
       </nav>
       <Routes>
