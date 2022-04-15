@@ -30,7 +30,7 @@ npm run test
 
 ### Deployment
 
-https://mnekx.github.io/crypto-tickers/
+https://crypto-tickers.herokuapp.com/
 
 ## Authors
 
