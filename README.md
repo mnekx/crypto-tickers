@@ -57,3 +57,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## Aknowledgements
+
+Thanks to Nelson Sakwa, author of the original design.
