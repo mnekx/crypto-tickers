@@ -3,7 +3,7 @@ import {
   FETCHING_STARTED,
   STARTED_SEARCHING,
   TICKERS_FETCHED,
-  TICKER_SEARCHED
+  TICKER_SEARCHED,
 } from './actionTypes';
 
 import TickersService from '../../services/tickers-service';
@@ -19,7 +19,7 @@ export const tickerSearched = (tickerName) => ({
   name: tickerName,
 });
 
-export const startedSearching = () => ({type: STARTED_SEARCHING})
+export const startedSearching = () => ({ type: STARTED_SEARCHING });
 
 export const tickersRetrieved = () => async (dispatch) => {
   dispatch(tickersFetchingStarted());
