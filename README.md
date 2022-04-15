@@ -1,4 +1,4 @@
-# Book Store
+# Crypto Tickers
 
 ## Screenshot ![see](./screenshot.png?raw=true 'Title')
 
