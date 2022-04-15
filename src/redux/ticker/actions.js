@@ -11,7 +11,7 @@ const tickerFetched = (data) => ({ type: TICKER_RETRIEVED, payload: data });
 
 const tickerFetchingErrored = () => ({ type: TICKER_ERROR_FETCHING });
 
-export const tickerRetrieved = (id) => async (dispatch) => {
+const tickerRetrieved = (id) => async (dispatch) => {
   dispatch(tickerFetchingStarted());
   try {
     const res = await TickersService.get(id);
@@ -23,3 +23,5 @@ export const tickerRetrieved = (id) => async (dispatch) => {
     return Promise.resolve(error);
   }
 };
+
+export default tickerRetrieved;
