@@ -11,6 +11,7 @@ const defaultState = {
   loading: false,
   error: false,
   searching: false,
+  filteredList: [],
 };
 
 const tickers = (prevState = defaultState, action) => {
@@ -19,14 +20,21 @@ const tickers = (prevState = defaultState, action) => {
     case FETCHING_STARTED:
       return { ...prevState, loading: true };
     case TICKERS_FETCHED:
-      return { list: action.payload, loading: false, error: false };
+      return {
+        ...prevState,
+        list: action.payload,
+        loading: false,
+        error: false,
+      };
     case ERROR_FETCHING:
       return { ...prevState, error: true, loading: false };
     case TICKER_SEARCHED:
       return {
         ...prevState,
         searching: false,
-        list: prevState.list.filter((ticker) => ticker.name.match(re) !== null),
+        filteredList: prevState.list.filter(
+          (ticker) => ticker.name.match(re) !== null,
+        ),
       };
     case STARTED_SEARCHING:
       return { ...prevState, searching: true };

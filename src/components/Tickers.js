@@ -22,9 +22,11 @@ const Tickers = () => {
       </section>
     );
   }
+  const tickersList = tickers.filteredList?.length === 0
+    ? tickers.list : tickers.filteredList;
   const tickersUL = (
     <ul className="items d-grid">
-      {tickers.list.map((ticker) => (
+      {tickersList.map((ticker) => (
         <Ticker key={ticker.id} ticker={ticker} />
       ))}
     </ul>
